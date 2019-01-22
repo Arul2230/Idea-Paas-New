@@ -1,0 +1,40 @@
+// @import '../src/global/BootstrapOverride/buttonMixin';
+
+// Global Bootstrap overrides START
+
+// $body-bg:  $appBackgroundColor;
+// $text-color: $primaryTextColor;
+// $btn-primary-color: $primaryColor;
+// $btn-primary-bg: $contrastBgColour;
+// $btn-primary-border: $primaryColor;
+// $navbar-default-border: transparent;
+// $dropdown-link-color: $primaryTextColor;
+// $navbar-default-link-active-color: $contrastTextColour;
+// $navbar-default-link-active-bg: $primaryColor-120;
+// $spacer: 1rem;
+// $spacers: () !default;
+// $spacers: map-merge(
+//   (
+//     0: 0,
+//     1: ($spacer * .25),
+//     2: ($spacer * .5),
+//     3: $spacer,
+//     4: ($spacer * 1.5),
+//     5: ($spacer * 3)
+//   ),
+//   $spacers
+// );
+
+// .btn-primary { @include btn-styles($primaryColor); }
+@import "../src/global/BootstrapOverride/bootstrapCustom";
+
+.row {
+  margin: 0;
+}
+
+label{
+  font-weight: normal;
+}
+
+
+// Global Bootstrap overrides END

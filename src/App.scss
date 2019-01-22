@@ -1,0 +1,9 @@
+@import 'bootstrapOverrides';
+
+.app{
+  font-size: 14px;
+  .top-nav{
+    min-height: 100px;
+    width: 100%
+  }
+}
