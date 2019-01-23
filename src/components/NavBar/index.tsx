@@ -1,17 +1,18 @@
 import * as React from 'react';
-import { Nav, Navbar, NavItem } from 'react-bootstrap';
+import { Button, Glyphicon, Nav, Navbar, NavItem } from 'react-bootstrap';
 
 class NavBar extends React.Component<any, any>{
   public render() {
     return (
-      <Navbar>
+      <Navbar fluid={true}>
         <Navbar.Header>
+          <Button>
+            <Glyphicon glyph="align-justify" />
+          </Button>
           <Navbar.Brand>
             <a href="#brand">React-Bootstrap</a>
           </Navbar.Brand>
-          <Navbar.Toggle />
         </Navbar.Header>
-        <Navbar.Collapse>
           <Nav>
             <NavItem eventKey={1} href="#">
               Link
@@ -28,7 +29,6 @@ class NavBar extends React.Component<any, any>{
               Link Right
       </NavItem>
           </Nav>
-        </Navbar.Collapse>
       </Navbar>
     )
   };
