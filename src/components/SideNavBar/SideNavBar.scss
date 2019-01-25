@@ -1,0 +1,74 @@
+.page-wrapper {
+	.sideNavShowContent {
+		transition: .5s all ease;
+		width: 80%;
+	}
+	.sideNavHideContent {
+		transition: .5s all ease;
+		width: 100%;
+	}
+	min-height: 90vh;
+	background-color: #f8f9fb;
+	display: flex;	
+}
+.customSideNavItem {
+	width: 100%;
+	display: block;
+	padding: 10px 20px;
+	color: #333;
+	cursor: pointer;
+	&.active {
+		border-left: 5px solid #287eb8;
+		color: #287eb8;
+		text-decoration: none;
+	}
+}
+.customSideNavWrapper {
+	width: 100%;
+}
+.customSideNav {
+	width: 100%;
+	padding: 0;
+}
+.customSideNav a:hover {
+	background-color: beige;
+	text-decoration: none;
+}
+.custon-nav-toggle {
+	padding: 0;
+	border-radius: 0 4px 4px 0;
+	cursor: pointer;
+	position: absolute;
+	padding: 15px;
+	top: 0;
+	left: 0;
+}
+.custon-nav-toggle span {
+	width: 80%;
+	margin: 5px;
+	display: block;
+	border: 4px solid #333;
+}
+.customNavHide {
+	transition: .5s all ease;
+	width: 0 !important;
+	.customSideNav {
+		transition: .5s all ease;
+		display: none;
+	}
+}
+.customNavShow {
+	border-right: 1px solid #e7e7e7;
+	transition: .5s all ease;
+	width: 100%;
+	height: 95vh;
+	width: 20%;
+	background-color: #fff; 
+	display: flex;
+}
+.customSubNavHide {
+	display: none;
+}
+.customSubNavShow {
+	display: block;
+}
